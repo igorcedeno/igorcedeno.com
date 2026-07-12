@@ -238,7 +238,7 @@ section {
 
 /* Hero Title */
 .hero-title {
-    font-size: 3rem;
+    font-size: 2.1rem;
     color: var(--text-light);
     letter-spacing: 10px;
     margin-bottom: 10px;
@@ -800,7 +800,7 @@ footer {
     }
     
     .hero-title {
-        font-size: 1.75rem;
+        font-size: 1.225rem;
     }
     
     .section-title {
