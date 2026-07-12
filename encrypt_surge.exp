@@ -1,0 +1,14 @@
+#!/usr/bin/expect -f
+set timeout -1
+spawn npx surge encrypt www.igorcedeno.com
+expect {
+    "email:" {
+        send "igor.cedeno@gmail.com\r"
+        exp_continue
+    }
+    "password:" {
+        send "Nayahlinah1!\r"
+        exp_continue
+    }
+    eof
+}

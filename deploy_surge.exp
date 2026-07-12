@@ -1,0 +1,22 @@
+#!/usr/bin/expect -f
+set timeout -1
+spawn npx surge --project /Users/user1/.gemini/antigravity/scratch/igor-optimized --domain igorcedeno.com
+expect {
+    "email:" {
+        send "igor.cedeno@gmail.com\r"
+        exp_continue
+    }
+    "password:" {
+        send "Nayahlinah1!\r"
+        exp_continue
+    }
+    "project:" {
+        send "\r"
+        exp_continue
+    }
+    "domain:" {
+        send "\r"
+        exp_continue
+    }
+    eof
+}
